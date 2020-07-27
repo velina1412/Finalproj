@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <a href="index.html"><span class="et_pb_image_wrap "></span></a>
+<!-- partial:index.partial.html -->
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+      <button type="button" class="toggle-btn" onclick="register()">Sign up</button>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>  
+      <form action="login.php" method="post" id="login" class="input-group">
+        <input type="text" class="input-field" name="userid"placeholder="User id" required>
+        <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
+        <input type="checkbox" class="chech-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+      <form action="login.php" method="post" id="Signup" class="input-group">
+        <input type="text" class="input-field" name="userid"placeholder="User id" required>
+        <input type="email" class="input-field" name="email"placeholder="Email id" required>
+        <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
+        <input type="checkbox" class="chech-box"><span class="hi">I agree to the Terms & conditions</span>
+        <button type="submit" class="submit-btn">Sign up</button>
+      </form>
+      </div>
+      
+    </div>
+    <script>
+      var x=document.getElementById("login");
+      var y=document.getElementById("Signup");
+      var z=document.getElementById("btn");
+      function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+      }
+      function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0";
+      }
+    </script>
+    </body>
+    </html>
+   
